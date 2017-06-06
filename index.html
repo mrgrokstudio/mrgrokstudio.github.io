@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/jquery.darkbox.css" />
+		<!--[if lt IE 9]><link rel="stylesheet" href="jquery.darkbox.ie.css"><![endif]-->
 		<link rel="stylesheet" href="assets/css/preloader.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -29,22 +31,22 @@
 				<section id="banner" data-video="images/banner">
 					<div class="inner">
 						<header>
-							<h1>Кузня Святогор</h1>
-							<p>Всероссийская студия художественной ковки</p>
+							<h1>Кузня «Святогор»</h1>
 						</header>
-						<a href="#main" class="more">Узнать больше</a>
+						<a href="#main" class="more"></a>
 					</div>
 				</section>
 
 			<!-- Main -->
 				<div id="main">
 					<div class="inner">
+					<div class="information"><p>Всероссийская студия художественной ковки</p></div>
 
 					<!-- Boxes -->
 						<div class="thumbnails">
 
 							<div class="box">
-								<a href=# class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="images/pic01.jpg" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
 								<div class="inner">
 									<h3>Тут будет название фотки</h3>
 									<p>А вот здесь какое-нибудь интересное описание для работ, которые на фотках чуть выше</p>
@@ -53,16 +55,16 @@
 							</div>
 
 							<div class="box">
-								<a href=# class="image fit"><img src="images/2.jpg" alt="" /></a>
+								<a href="images/pic02.jpg" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 								<div class="inner">
 									<h3>Nascetur nunc varius commodo</h3>
 									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href=# class="button style2 fit" data-poptrox="youtube,800x400">Пока</a>
+									<a href=# class="button fit" data-poptrox="youtube,800x400">Пока</a>
 								</div>
 							</div>
 
 							<div class="box">
-								<a href=# class="image fit"><img src="images/3.jpg" alt="" /></a>
+								<a href="images/3.jpg" class="image fit"><img src="images/3.jpg" alt="" /></a>
 								<div class="inner">
 									<h3>Nascetur nunc varius commodo</h3>
 									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
@@ -71,7 +73,7 @@
 							</div>
 
 							<div class="box">
-								<a href=# class="image fit"><img src="images/4.jpg" alt="" /></a>
+								<a href="images/4.jpg" class="image fit"><img src="images/4.jpg" alt="" /></a>
 								<div class="inner">
 									<h3>Nascetur nunc varius commodo</h3>
 									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
@@ -89,7 +91,7 @@
 							</div>
 
 							<div class="box">
-								<a href=# class="image fit"><img src="images/6.jpg" alt="" /></a>
+								<a href="images/6.jpg" class="image fit"><img src="images/6.jpg" alt="" /></a>
 								<div class="inner">
 									<h3>Nascetur nunc varius commodo</h3>
 									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
@@ -104,13 +106,13 @@
 							<div class="slide">
 				<ul id="da-thumbs" class="da-thumbs">
 					<li>
-						<a href=#>
+						<a href="images/1.jpg" class="image fit">
 							<img src="images/1.jpg" />
 							<div><span>Обратите</span></div>
 						</a>
 					</li>
 					<li>
-						<a href=#>
+						<a href=images/2.jpg>
 							<img src="images/2.jpg" />
 							<div><span>внимание</span></div>
 						</a>
@@ -175,8 +177,9 @@
 							<div><span>ям</span></div>
 						</a>
 					</li>
+					<div style="clear:both;"></div>
 				</ul>
-				<div style="clear:both;"></div>
+				
 			</div>
 			
         
@@ -185,23 +188,25 @@
 
 			<!-- Footer -->
 				<footer id="footer">
+				
 					<div class="inner">
 						<h2>Как Вам сайт?</h2>
 						<p>Здесь будут копирайты</p>
-
+						<!--<img src="images/visit.jpg" />-->
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						
 					</div>
 				</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/preload.js"></script>
+			<script src="assets/jquery.darkbox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -218,6 +223,9 @@
 
 			});
 		</script>
+		<script>
+		$( 'a[rel=darkbox]' ).darkbox();
+	</script>
 	
 
 	</body>

@@ -326,7 +326,7 @@
 				.thumbnails .box {
 					width: 45%;
 				}
-				
+
 			}
 
 			@media screen and (max-width: 736px) {
@@ -1167,7 +1167,7 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
-		min-height: 70vh;
+		height: 100vh;
 		background-image: url("../../images/banner.jpg");
 		background-position: center;
 		background-size: cover;
@@ -1186,9 +1186,9 @@
 
 		#banner h1 {
 			color: #fff;
-			font-size: 5em;
+			font-size: 15vh;
 			font-weight: 400;
-			
+			font-family: Runic;
 			margin: 0;
 		}
 
@@ -1243,9 +1243,9 @@
 
 		#banner .more {
 			background-image: url("images/arrow.svg");
-			background-position: center 1.35em;
+			background-position: 50% 50%;
 			background-repeat: no-repeat;
-			background-size: auto;
+			background-size: 50%;
 			border: 1px solid #fff;
 			border-radius: 100%;
 			color: rgba(255, 255, 255, 0.75);
@@ -1362,6 +1362,11 @@
 
 			}
 
+		.information p{
+			font-size: 22pt;
+			text-align: center;
+		}
+
 /* Footer */
 
 	#footer {
@@ -1390,7 +1395,14 @@
 				}
 
 			}
-
+		/*	 .inner img{
+				width: 45vw;
+				max-width: 35em;
+				padding: 8px;
+   			 background: #2c2c32;
+   			 border-radius: 14px;
+			}
+*/
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.9em;
